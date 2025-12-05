@@ -18,7 +18,7 @@ export default function Contact() {
     try {
       // Create FormData for the Web3Forms API
       const formPayload = new FormData();
-      formPayload.append('access_key', '381c2492-0b70-45ec-b2b2-b069fe43e9cb'); // Replace with your actual key
+      formPayload.append('access_key', 'fa0a6056-9edf-4ad3-acbc-db946f362b64'); // Replace with your actual key
       formPayload.append('name', formData.name);
       formPayload.append('email', formData.email);
       formPayload.append('message', formData.message);
