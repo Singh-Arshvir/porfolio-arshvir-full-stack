@@ -38,10 +38,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group animate-header-item">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
               <Code className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-red-400 to-rose-400 bg-clip-text text-transparent">
               Arshvir Singh
             </span>
           </a>
@@ -105,15 +105,15 @@ const SocialLinks = () => (
   <div className="flex items-center space-x-4">
     {[
       { Icon: Github, href: 'https://github.com/Singh-Arshvir', delay: '400ms' },
-      { Icon: Linkedin, href: 'https://www.linkedin.com/in/your-profile', delay: '500ms' },
-      { Icon: Mail, href: 'mailto:your-email@example.com', delay: '600ms' }
+      { Icon: Linkedin, href: 'https://www.linkedin.com/in/arshvir-shahi-01958336a/', delay: '500ms' },
+      { Icon: Mail, href: 'mailto:your-arshvir45@gmail.com', delay: '600ms' }
     ].map(({ Icon, href, delay }) => (
       <a
         key={href}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-400 hover:text-green-400 transition-colors duration-200 animate-header-item"
+        className="text-gray-400 hover:text-red-400 transition-colors duration-200 animate-header-item"
         style={{ animationDelay: delay }}
       >
         <Icon size={20} />

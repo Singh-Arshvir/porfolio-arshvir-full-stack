@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Award, Briefcase } from 'lucide-react';
+import { Calendar, Briefcase } from 'lucide-react';
 
 const experiences = [
   
@@ -9,14 +9,14 @@ const experiences = [
     organization: 'Self-Employed',
     description: 'Developing custom solutions for clients using MERN stack and implementing IoT systems.',
     icon: Briefcase,
-    color: 'from-green-400 to-emerald-500'
+    color: 'from-red-400 to-rose-500'
   },
   
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-gradient-to-b from-emerald-900/20 via-black to-purple-900/20 animate-gradient-slow relative overflow-hidden">
+    <section id="experience" className="py-20 bg-gradient-to-b from-rose-900/20 via-black to-red-900/20 animate-gradient-slow relative overflow-hidden">
       <div className="stars-container">
         {[...Array(50)].map((_, i) => (
           <div
@@ -37,12 +37,12 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Experience</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-purple-400 mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-red-400 to-rose-400 mx-auto"></div>
         </div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-400 via-purple-400 to-blue-400"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-400 via-rose-400 to-red-400"></div>
 
           {/* Experience items */}
           <div className="space-y-12">
@@ -57,8 +57,8 @@ export default function Experience() {
                 >
                   {/* Timeline dot with pulse effect */}
                   <div className="absolute left-4 md:left-1/2 -translate-x-2 md:-translate-x-3">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-emerald-400 to-purple-400 relative">
-                      <div className="absolute inset-0 w-6 h-6 rounded-full bg-gradient-to-r from-emerald-400 to-purple-400 animate-ping opacity-75"></div>
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-red-400 to-rose-400 relative">
+                      <div className="absolute inset-0 w-6 h-6 rounded-full bg-gradient-to-r from-red-400 to-rose-400 animate-ping opacity-75"></div>
                     </div>
                   </div>
 
@@ -66,20 +66,20 @@ export default function Experience() {
                   <div className={`ml-12 md:ml-0 md:w-1/2 ${
                     index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'
                   }`}>
-                    <div className="p-6 rounded-xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 hover:border-emerald-400/30 transition-all duration-300 group">
+                    <div className="p-6 rounded-xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 hover:border-red-400/30 transition-all duration-300 group">
                       <div className="flex items-center gap-3 mb-4">
                         <div className={`p-2 rounded-lg bg-gradient-to-r ${exp.color} group-hover:scale-110 transition-transform duration-300`}>
                           <Icon className="w-6 h-6 text-white" />
                         </div>
-                        <span className="text-sm text-emerald-400 flex items-center gap-2">
+                        <span className="text-sm text-red-400 flex items-center gap-2">
                           <Calendar className="w-4 h-4" />
                           {exp.date}
                         </span>
                       </div>
-                      <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-emerald-400 transition-colors duration-300">
+                      <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-red-400 transition-colors duration-300">
                         {exp.title}
                       </h3>
-                      <p className="text-purple-400 mb-2">{exp.organization}</p>
+                      <p className="text-red-400 mb-2">{exp.organization}</p>
                       <p className="text-gray-300">{exp.description}</p>
                     </div>
                   </div>

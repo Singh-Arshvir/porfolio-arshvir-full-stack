@@ -20,11 +20,11 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background with circular gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-black to-emerald-900/20 animate-gradient">
+      <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-black to-rose-900/20 animate-gradient">
         <div className="absolute inset-0 circular-gradient"></div>
         <div className="absolute inset-0">
           {/* Particle effect */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(220,38,38,0.1)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
         </div>
       </div>
 
@@ -35,15 +35,15 @@ export default function Hero() {
             <img
               src="/arshvir.jpg"
               alt="Arshvir Singh"
-              className="rounded-full object-cover w-full h-full border-4 border-green-400/30 shadow-lg shadow-green-500/20"
+              className="rounded-full object-cover w-full h-full border-4 border-red-400/30 shadow-lg shadow-red-500/20"
             />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-green-400/20 to-emerald-400/20 animate-pulse"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red-400/20 to-rose-400/20 animate-pulse"></div>
           </div>
 
           {/* Name and Title */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-white">
-              Hi, I'm <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Arshvir Singh</span>
+              Hi, I am <span className="bg-gradient-to-r from-red-400 to-rose-400 bg-clip-text text-transparent">Arshvir Singh</span>
             </h1>
             <div className="h-8">
               <p className="text-xl md:text-2xl text-gray-300 transition-all duration-500">
@@ -56,7 +56,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             <a
               href="#contact"
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-green-500 to-emerald-400 text-white font-semibold flex items-center gap-2 hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300"
+              className="px-8 py-3 rounded-full bg-gradient-to-r from-red-500 to-rose-400 text-white font-semibold flex items-center gap-2 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300"
             >
               <Mail size={20} />
               Contact Me
