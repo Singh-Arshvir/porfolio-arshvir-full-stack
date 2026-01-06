@@ -62,7 +62,7 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/resumeArshvir.pdf"
+              href="/Arshvir-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full bg-white/10 backdrop-blur-sm text-white font-semibold flex items-center gap-2 hover:bg-white/20 transition-all duration-300"
